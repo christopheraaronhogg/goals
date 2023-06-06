@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Goals App</h1>
+    </header>
+    <main>
+        <form id="goal-form">
+            <input id="goal-input" type="text" placeholder="Enter a new goal">
+            <button type="submit">Add Goal</button>
+        </form>
+        <ul id="goal-list">
+            <!-- ... -->
+        </ul>
+        <div id="storage-controls">
+            <label for="download-goals" class="button download-label">
+                <button id="download-goals">Download Goals</button>
+            </label>
+            <label for="upload-goals" class="button upload-label">
+                <input type="file" id="upload-goals" accept=".json" style="display: none;">
+                <span>Upload Goals</span>
+            </label>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Goals App</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
